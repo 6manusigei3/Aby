@@ -8,8 +8,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Add the password hash so guard() works -->
+  <script>
+    window.ZOOTOPIA_PASSWORD_HASH = "bf87e15c14d31d571b89a5b4efbf10314b07da05f255cf7f23d985825585c8b2";
+  </script>
+  <script src="script.js"></script>
+  <script>
+    guard(); // Check login before showing page
+  </script>
 </head>
-<body class="bg" onload="guard(); initQuotes(); initPlayer();">
+<body class="bg" onload="initQuotes(); initPlayer();">
   <div class="container">
     <header class="topbar">
       <div class="title">
@@ -45,10 +54,10 @@
             <input id="seek" type="range" min="0" max="100" value="0" oninput="seekAudio(this.value)" />
             <span id="duration">0:00</span>
           </div>
-          <p class="note">Tip: volume on your device affects playback. Tracks are safe, royalty‑free placeholders so the page stays light.</p>
+          <p class="note">Tip: volume on your device affects playback. Tracks are safe, royalty-free placeholders so the page stays light.</p>
         </div>
         <details class="yt">
-          <summary>🐾 Bonus: Play “Try Everything” (on‑page YouTube)</summary>
+          <summary>🐾 Bonus: Play “Try Everything” (on-page YouTube)</summary>
           <div class="yt-wrap">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/c6rP-YP4c5I" title="Try Everything - Shakira" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -69,10 +78,8 @@
     </section>
 
     <footer class="foot">
-      <p>Made with kindness by H. 🧡</p>
+      <p>Made with kindness by Manu. 🧡</p>
     </footer>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
