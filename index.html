@@ -13,10 +13,7 @@
   <script>
     window.ZOOTOPIA_PASSWORD_HASH = "bf87e15c14d31d571b89a5b4efbf10314b07da05f255cf7f23d985825585c8b2";
   </script>
-  <script src="script.js"></script>
-  <script>
-    guard(); // Check login before showing page
-  </script>
+  <script src="script.js" defer></script>
 </head>
 <body class="bg" onload="initQuotes(); initPlayer();">
   <div class="container">
@@ -54,12 +51,12 @@
             <input id="seek" type="range" min="0" max="100" value="0" oninput="seekAudio(this.value)" />
             <span id="duration">0:00</span>
           </div>
-          <p class="note">Tip: volume on your device affects playback. Tracks are safe, royalty-free placeholders so the page stays light.</p>
+          <p class="note">Tip: volume on your device affects playback. Tracks are stored safely in your music folder. 🎶</p>
         </div>
         <details class="yt">
-          <summary>🐾 Bonus: Play “Try Everything” (on-page YouTube)</summary>
+          <summary>🐾 Bonus: Watch “A Sky Full of Stars” (YouTube)</summary>
           <div class="yt-wrap">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/c6rP-YP4c5I" title="Try Everything - Shakira" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VPRjCeoBqrI" title="A Sky Full of Stars - Coldplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </details>
       </article>
