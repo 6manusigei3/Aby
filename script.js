@@ -12,10 +12,10 @@ function logout() {
 
 // ---- Music Player ----
 const tracks = [
-  { title: "Those Eyes - New West", src: "music/those_eyes.mp3" },
-  { title: "Car's Outside - James Arthur", src: "music/cars_outside.mp3" },
-  { title: "A Sky Full of Stars - Coldplay", src: "music/a_sky_full_of_stars.mp3" },
-  { title: "Fast Car - Jonas Blue ft. Dakota", src: "music/fast_car.mp3" }
+  { title: "Those Eyes - New West", src: "music/Those_Eyes.mp3" },
+  { title: "Car's Outside - James Arthur", src: "music/Cars_Outside.mp3" },
+  { title: "A Sky Full of Stars - Coldplay", src: "music/A_Sky_Full_Of_Stars.mp3" },
+  { title: "Fast Car - Jonas Blue ft. Dakota", src: "music/Fast_Car.mp3" }
 ];
 
 let currentTrack = 0;
@@ -112,3 +112,6 @@ function tellJoke() {
   const j = jokes[Math.floor(Math.random() * jokes.length)];
   document.getElementById("joke").textContent = j;
 }
+
+
+
