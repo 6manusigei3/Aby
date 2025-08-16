@@ -40,7 +40,11 @@
           <div class="track-info">
             <div id="track-title">Loading…</div>
           </div>
-          <audio id="audio" preload="none"></audio>
+          <!-- Updated audio tag with first track -->
+          <audio id="audio" preload="none">
+            <source id="audio-source" src="music/Those_Eyes.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
           <div class="controls">
             <button class="btn small" onclick="prevTrack()">⏮</button>
             <button class="btn small" onclick="togglePlay()" id="play-btn">▶</button>
@@ -80,3 +84,4 @@
   </div>
 </body>
 </html>
+
