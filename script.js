@@ -50,7 +50,7 @@ function nextQuote() {
 // ===== JOKES =====
 const jokes = [
   "Why don’t rabbits ever get hot in the summer? Because they have hare-conditioning!",
-  "What do you call an alligator in a vest? An investigator!",
+  "What do you call an alligator in a vest? An investigator",
   "Why did the fox sit under the tree? To paws for a bit.",
   "Why don’t koalas count as bears? Because they don’t have the koalafications!"
 ];
