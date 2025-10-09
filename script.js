@@ -7,7 +7,7 @@ async function guard() {
 
   let pass = prompt("🔒 Enter password to unlock Aby's Zootopia HQ:");
   if (!pass) {
-    document.body.innerHTML = "<h2 style='text-align:center;margin-top:40px'>Access denied 🦊</h2>";
+    document.body.innerHTML = "<h2 style='text-align:center;margin-top:40px'>Access denied </h2>";
     return;
   }
 
